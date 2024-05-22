@@ -34,7 +34,8 @@ int main() {
 	
 	Rectangle rectA(10,5);
 	Rectangle rectB(3,7,a1);
-	Rectangle rectC = rectA;
+	Rectangle rectC(0,0);
+	rectC = rectB;
 
 	Rhombus rhoA(6,2,a2);
 	Rhombus rhoB = rhoA;
