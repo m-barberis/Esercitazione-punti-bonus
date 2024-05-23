@@ -1,3 +1,9 @@
+/// \file CQuadrilateral.cpp
+///	\brief Implementation of functions declared in CQuadrilateral.h
+///
+///	Details.
+///
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstring>
 #include "CQuadrilateral.h"
@@ -12,7 +18,7 @@ Quadrilateral::Quadrilateral() {
 } 
 
 /// @brief constructor 
-/// ta a struct of type TextArea with infos on text and font size
+/// @param ta a struct of type TextArea with infos on text and font size
 Quadrilateral::Quadrilateral(TextArea ta) {
 	
 	cout << "Quadrilateral - constructor - TextArea" << endl;

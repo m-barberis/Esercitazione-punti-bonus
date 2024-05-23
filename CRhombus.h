@@ -9,6 +9,7 @@
 #define RHOMBUS_H
 
 #include<iostream>
+#include <cstring>
 
 #include "CQuadrilateral.h"
 
