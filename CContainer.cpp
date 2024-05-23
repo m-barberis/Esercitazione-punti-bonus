@@ -6,7 +6,7 @@
 ///@include Header file with all declarations
 #include "CContainer.h"
 
-//DOXYGEN!!!!!
+
 ///@brief Default contructor
 Container::Container()
 {
@@ -30,6 +30,8 @@ Container::~Container()
 /// @param size the maximum amount of quadrilateral shapes that can be contained
 Container::Container(unsigned int size)
 {
+	Init();
+	
 	SetSize(size);
 	quadContainer = new Quadrilateral * [nShapes];
 	for (int count = 0; count <= (nShapes - 1); count++)
