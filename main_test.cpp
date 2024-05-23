@@ -4,7 +4,7 @@
 #include "CQuadrilateral.h"
 #include "CRectangle.h"
 #include "CRhombus.h"
-
+#include "CContainer.h"
 const int LISTL=6; 
 
 Quadrilateral* quadList[LISTL];
@@ -59,6 +59,21 @@ int main() {
 	
 	Show();
 
+	Container shapes(4);
+	shapes.AddShape(&rectA);
+	shapes.AddShape(&rectB);
+	shapes.AddShape(&rhoA);
+	shapes.AddShape(&rhoB);
+
+	shapes.DrawAll();
+
+	shapes.RemoveShape(3);
+
+	shapes.DrawAll();
+
+	shapes.RemoveAllShapes();
+
+	shapes.DrawAll();
 
 	return 0;
 
